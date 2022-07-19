@@ -1,14 +1,157 @@
-:root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --very-light-pink: #C7C7C7;
-    --text-input-field: #F7F7F7;
-    --hospital-green: #ACD9B2;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ebeef5;
+  color: white;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.5s ease;
+/* }
+
+.social-icons li a:hover {
+  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 30px;
+}
+
+.social-icons li a::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  transform: scale(1);
+  transition: 0.5s ease-in-out; */
+}
+
+.social-icons li a:hover::before {
+  transform: scale(0);
+}
+
+.header 
+{
+  width: 100%;
+  height: 80px;
+}
+
+.caja_principal
+{
+  width: 100%;
+  height: 380px;
+}
+
+.footer1
+{
+  font-size: 10px;
+  color: #0db2af;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.footer2
+{
+  font-size: 10px;
+  width: 100%;
+  height: 70px;
+  background-color: #0db2af;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div1
+{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.div2
+{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.div3
+{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px)
+{
+  .footer2
+{
+  height: 180px;
+  background-color: #c8df61;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+  .div1 
+  {
+    grid-area: 3 / 1 / 4 / 4;
+    justify-content: center;
+    width: 100%;
   }
-body{
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
+
+  .div2
+  {
+    grid-area: 1 / 1 / 2 / 4; 
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .div3
+  {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+  }
 }
